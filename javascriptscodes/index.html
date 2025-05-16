@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add two numbers</title>
+</head>
+<body>
+<div>
+    <h1> Add two numbers</h1>
+    <input type="text" id="num1" placeholder="Enter first number"><br><br>
+    <input type="text" id="num2" placeholder="Enter second number"><br><br>
+     <input type="text" id="num3" placeholder="Enter second number"><br><br>
+    <button type="submit" onclick="add()">add</button>
+    <h1 id="result1">add of two numbers</h1>
+      <h1 id="result2">mul </h1>
+</div>
+<script>
+    function add(){
+        const num1=Number(document.getElementById("num1").value);
+        const num2=Number(document.getElementById("num2").value);
+        const total=num1+num2;
+          const mul=Number(document.getElementById("num3").value);
+         const multiply =total+mul''
+        const result=document.getElementById("result1");
+        result.innerHTML=total + "  add of two numbers";
+        const result2=document.getElementById("result2");
+        result2.innerHTML=result2 + "  mul of two numbers";
+          alert(multiply);
+    }
+
+
+</script>
+</body>
+</html>
